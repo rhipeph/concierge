@@ -1,4 +1,4 @@
-var ip = 'check';
+/*var ip = 'check';
 var access_key = 'f5ba7b457ae7b68d069be7ac12b492ab';
 
 $.ajax({
@@ -12,9 +12,9 @@ $.ajax({
             window.location.href = "error.html";
         }                   
     }
-});
+});*/
 
-/*
+
 function getIP(json) {
     var myPublicIP = json.query;
         console.log(myPublicIP);
@@ -23,4 +23,4 @@ function getIP(json) {
         } else {
             window.location.href = "error.html";
         }   
-   }*/
+   }
