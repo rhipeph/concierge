@@ -1,3 +1,4 @@
+/*
 var ip = 'check'
 var access_key = 'f5ba7b457ae7b68d069be7ac12b492ab';
 
@@ -12,4 +13,14 @@ $.ajax({
             window.location.href = "error.html";
         }                   
     }
-});
+});*/
+
+function getIP(json) {
+    var myPublicIP = json.query;
+        console.log(myPublicIP);
+        if(myPublicIP == "223.130.19.2") {
+            window.location.href = "portal.html";
+        } else {
+            window.location.href = "error.html";
+        }   
+   }
