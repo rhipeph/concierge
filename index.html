@@ -4,36 +4,47 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 <title>Rhipe Concierge PH</title>
 <style>
-    .resp-container {
-        position: relative;
-        overflow: hidden;
-        padding-top: 56.25%;
-    }
-    
-    .resp-iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border: 0;
-    }
-    p {
-        margin-left: auto;
-        margin-right: auto;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 36px;
-        font-weight: 700;
-    }
+html, body {
+  background: #222f3e;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.centered-wrapper {
+    position: relative;
+    text-align: center;
+}
+.centered-wrapper:before {
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 0; height: 100%;
+    vertical-align: middle;
+}
+.centered-content {
+    display: inline-block;
+    vertical-align: middle;
+}
+iframe {
+    border: 0px;
+}
+p {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 36px;
+    font-weight: 700;
+}
 </style>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
 <script src="//extreme-ip-lookup.com/json/?callback=getIP" async defer></script>
 <script src="script.js"></script></body>    
 </head>
-<body>
+<body class="centered-wrapper">
 
-    <div id="powerapps" class="resp-container">
-            <iframe class="resp-iframe" src="https://web.powerapps.com/webplayer/iframeapp?source=website&screenColor=rgba(165,34,55,1)&appId=/providers/Microsoft.PowerApps/apps/0aadd047-2eb1-473a-b59a-443fe57cf257" allow="geolocation; microphone; camera" allowfullscreen/></iframe>
+    <div id="powerapps" class="centered-content">
+            <iframe width="1366" height="768" src="https://web.powerapps.com/webplayer/iframeapp?source=website&screenColor=rgba(165,34,55,1)&appId=/providers/Microsoft.PowerApps/apps/0aadd047-2eb1-473a-b59a-443fe57cf257" allow="geolocation; microphone; camera" allowfullscreen/></iframe>
     </div>   
     
     <p id="errorbox">   
